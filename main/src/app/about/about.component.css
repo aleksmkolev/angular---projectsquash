@@ -1,0 +1,10 @@
+.py-16{
+    width: 50%;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    border-radius: 25px; /* Rounded corners */
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px; /* Or whatever width you prefer */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+}
