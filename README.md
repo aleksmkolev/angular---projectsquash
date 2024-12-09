@@ -32,7 +32,7 @@
 <h2>Specifications:</h2>
 <h3>if you are encountering problems in accessing the login/register tab, please clear session and locale storage from your browser dev tools.</h3p>
 
-
+<Space>
 ![image](https://github.com/user-attachments/assets/322bcaa9-8afd-445c-9429-3e1136fa0af2)
 
 
