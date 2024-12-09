@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+.py-12 {
+    width: 50%;
+    height: 50vh;
+    background-color: rgba(243, 237, 237, 0.8); /* White with 80% opacity */
+    border-radius: 45px; /* Rounded corners */
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px; /* Or whatever width you prefer */
+    box-shadow: 0 4px 6px rgba(32, 30, 30, 0.1); /* Optional: adds subtle shadow */
+}
+
+
+.welcome-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.welcome-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.welcome-image {
+    width: 60px;  /* Adjust size as needed */
+    height: 60px;
+    object-fit: contain;
+}
+
