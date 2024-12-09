@@ -13,7 +13,7 @@
 <p>The projet uses mongodb and node.js as a backend so you wont be able to utilize it if you dont have it installed and connected</p>
 <p>if you do have it, run the below commands</p>
 
-<li>cd backend and type "npm start" this will run the server and you will see Mongodb Connected port:5000</li>
+<li>cd backend and type "npm start" this will run the server and you will see Mongodb Connected port:4200</li>
 <li>cd front end type "ng serve" this will start the app and you will be able to open it through localhost:4200</li>
 
 <h2>Key functionality and features:</h2>
