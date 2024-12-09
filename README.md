@@ -9,6 +9,7 @@
 <li>💻cd frontend in termianl</li>
 <li>💻type "npm install"</li>
 <li>in the backend folder create .env file and replace the values to your preference.</li>
+
 ![image](https://github.com/user-attachments/assets/d714f46d-6992-4943-b14f-0b0bb91b7c03)
 
 
