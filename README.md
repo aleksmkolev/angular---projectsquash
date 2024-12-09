@@ -8,9 +8,14 @@
 <li>💻type "npm install"</li>
 <li>💻cd frontend in termianl</li>
 <li>💻type "npm install"</li>
-<li>in the backend folder create .env file and replace the values to your preference.</li>
 
-![image](https://github.com/user-attachments/assets/d714f46d-6992-4943-b14f-0b0bb91b7c03)
+## Environment Variables
+
+Create a `.env` file in the root directory and add the following configurations:
+
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/>
+JWT_SECRET=<secret-key>
 
 
 <h2>Starting the project</h2>
