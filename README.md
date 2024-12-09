@@ -10,7 +10,7 @@
 <li>💻type "npm install"</li>
 
 <h2>Starting the project</h2>
-<p>The projet uses mongodb as a backend so you wont be able to utilize it if you dont have it installed and connected</p>
+<p>The projet uses mongodb and node.js as a backend so you wont be able to utilize it if you dont have it installed and connected</p>
 <p>if you do have it, run the below commands</p>
 
 <li>cd backend and type "npm start" this will run the server and you will see Mongodb Connected port:5000</li>
