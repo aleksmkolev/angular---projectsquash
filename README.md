@@ -15,7 +15,7 @@ Create a `.env` file in the root directory and add the following configurations:
 
 <ul>PORT=5000</ul>
 <ul>MONGODB_URI=mongodb://localhost:27017/></ul>
-<ul>JWT_SECRET=<secret-key></secret-key></ul>
+<ul>JWT_SECRET=<secret-key></ul>
 
 
 <h2>Starting the project</h2>
