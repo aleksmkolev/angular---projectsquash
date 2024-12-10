@@ -4,12 +4,13 @@
     <div class="container mx-auto px-6 text-center">
         <div class="flex justify-center items-center gap-4">
             <h2 class="welcome-title text-gray-900">
-                Welcome to <span class="text-black">Court Pal</span>
+                <span class="text-teal-500 font-bold">{{ 'welcome to' | capitalize }}</span>
+                <span class="text-black">Court Pal</span>
             </h2>
             <img src="/ball.png" alt="Ball" class="welcome-image">
         </div>
         <p class="welcome-text mt-4 text-gray-600">
-            Find your favourite squash courts and book them online.
+            {{ 'Find your favourite squash courts and book them online. ' | shorten:70 }}
         </p>
         <div class="mt-6 flex justify-center gap-4 flex-wrap">
             <a routerLink="/courts" class="px-6 py-3 bg-black text-white font-medium rounded-full shadow-md hover:shadow-lg hover:bg-gray-800 transition duration-300">
@@ -27,7 +28,26 @@
                 Register
             </a>
         </div>
-        <p>{{ someText | shorten:25 }}</p>
+        <div class="mt-4 text-center text-sm text-gray-600 transition-all duration-500" 
+             [class.opacity-0]="!isVisible"
+             [class.opacity-100]="isVisible"
+             [class.max-h-0]="!isVisible"
+             [class.max-h-32]="isVisible"
+             [class.overflow-hidden]="true">
+            <p class="text-[#339999] text-lg font-medium">
+                {{ 'latest news: new courts available in downtown area! Check them out today for special opening discounts.' | capitalize | shorten:showFullText ? 200 : 45 }}
+            </p>
+            <div class="mt-1 flex flex-col items-center justify-center text-gray-600">
+                <button (click)="toggleText()" 
+                        class="flex items-center gap-2 text-[#339999] hover:text-[#2a7a7a] transition-colors">
+                    <span class="underline">{{ showFullText ? 'Less' : 'More' }}</span>
+                    <img src="/ball.png" 
+                         [class.rotate-180]="showFullText"
+                         class="w-8 h-8 rounded-full transition-transform duration-300" 
+                         alt="Toggle">
+                </button>
+            </div>
+        </div>
     </div>
 </section>
 </div>
