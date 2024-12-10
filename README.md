@@ -11,7 +11,7 @@
 
 ## Environment Variables
 
-Create a `.env` file in the root directory and add the following configurations:
+Create a `.env` file in the root directory of backend folder and add the following configurations to the file:
 
 <ul>PORT=5000</ul>
 <ul>MONGODB_URI="string here"</ul>
