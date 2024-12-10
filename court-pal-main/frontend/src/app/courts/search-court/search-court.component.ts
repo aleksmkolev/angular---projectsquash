@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 import { LoaderComponent } from '../../loader/loader.component';
 import { RouterLink } from '@angular/router';
 import { CourtFilterPipe } from '../../shared/pipes/court-filter-pipe';
-import { PriceFormatPipe } from '../../shared/pipes/price-format.pipe';
 
 @Component({
     selector: 'app-search-court',
@@ -16,8 +15,7 @@ import { PriceFormatPipe } from '../../shared/pipes/price-format.pipe';
         CommonModule, 
         LoaderComponent, 
         RouterLink,
-        CourtFilterPipe,
-        PriceFormatPipe
+        CourtFilterPipe
     ],
     templateUrl: './search-court.component.html',
     styleUrls: ['./search-court.component.css'],
