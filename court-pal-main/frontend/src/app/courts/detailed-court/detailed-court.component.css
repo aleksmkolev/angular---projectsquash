@@ -13,14 +13,20 @@
 .edit{
     background-color: #339999;
     color: white;
-    padding: 10px 20px; 
-    border-radius: 10px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    width: 96px;
+    font-size: 14px;
+    text-align: center;
 }
 .delete{
     background-color: #339999;
     color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    width: 96px;
+    font-size: 14px;
+    text-align: center;
 }
 
 /* Comments container */
@@ -56,4 +62,12 @@
 
 .comments-section::-webkit-scrollbar-thumb:hover {
     background: #277777;
+}
+
+/* Add this new class */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.75rem;
 }
