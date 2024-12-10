@@ -22,7 +22,13 @@ export const routes: Routes = [
             { path: '', component: CatalogComponent },
             {path: ':courtId/details', component: DetailedCourtComponent},
             {
-                path: 'create', loadComponent: () =>
+                path: 'create', 
+                component: AddCourtComponent,
+                canActivate: [AuthGuard]
+            },
+            {
+                path: 'create-lazy', 
+                loadComponent: () =>
                     import('./courts/add-court/add-court.component').then((c) => c.AddCourtComponent),
                 canActivate: [AuthGuard]
             },
