@@ -91,6 +91,12 @@
         </div>
 
 
-        <button class="btn" [disabled]="form.invalid">Create Court</button>
+        <div class="button-group">
+            <button style="background-color: #339999;" 
+                    class="text-white font-medium rounded-[20px] shadow-md hover:bg-black hover:shadow-lg transition-all duration-300" 
+                    [disabled]="form.invalid">
+                Create
+            </button>
+        </div>
     </form>
 </div>
