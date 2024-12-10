@@ -1,5 +1,5 @@
 <div class="container mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-6 text-center">Court Catalog</h1>
+    <h1 class="text-3xl font-bold mb-6 text-center text-[#339999] uppercase tracking-wide">Court Catalog</h1>
     @if (isLoading) {
     <app-loader />
     } @else {
@@ -12,18 +12,20 @@
     @if (courts && courts.length > 0) {
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         @for (court of courts; track $index) {
-        <div class="bg-white rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
+        <div class="bg-white/70 backdrop-blur-sm rounded-[25px] shadow-lg p-5 transition-transform transform hover:scale-105 max-w-[300px] mx-auto">
             <div class="flex items-center space-x-6">
-                <img src="{{court.imageUrl}}" alt="Sport" class="w-20 h-20 rounded-full" />
+                <img src="{{court.imageUrl}}" alt="Sport" class="w-16 h-16 rounded-full" />
                 <div>
-                    <h2 class="text-2xl font-semibold">{{court.name}} - ({{court.symbol}})</h2>
+                    <h2 class="text-lg font-semibold">{{court.name}} - ({{court.symbol}})</h2>
                     <p class="text-gray-600 text-lg">Price: ${{court.currentPrice}}</p>
                 </div>
             </div>
-            <button [routerLink]="[ court._id, 'details']"
-            style="background-color: #339999;" class="px-6 py-3 text-white font-medium rounded-full shadow-md hover:shadow-lg hover:opacity-90 transition duration-300">
-                Details
-            </button>
+            <div class="flex justify-center mt-3">
+                <button [routerLink]="[ court._id, 'details']"
+                style="background-color: #339999;" class="px-4 py-1.5 text-white text-sm font-medium rounded-[20px] shadow-md hover:shadow-lg ">
+                    Details
+                </button>
+            </div>
         </div>
         }
     </div>
