@@ -5,11 +5,18 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { EmailDirective } from '../../directives/email.directive';
 import { DOMAINS } from '../../constants';
 import { CapitalizePipe } from '../../shared/pipes/capitalize.pipe';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-login',
     standalone: true,
-    imports: [RouterLink, FormsModule, EmailDirective, CapitalizePipe],
+    imports: [
+        CommonModule,
+        RouterLink,
+        FormsModule,
+        EmailDirective,
+        CapitalizePipe
+    ],
     templateUrl: './login.component.html',
     styleUrl: './login.component.css',
 })
