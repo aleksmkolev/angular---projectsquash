@@ -2,7 +2,7 @@
     @if (isLoading) {
     <app-loader />
     } @else {
-    <h1>Edit Court</h1>
+    <h1 class="text-[#339999] uppercase tracking-wide">Edit Court</h1>
     <form #editForm="ngForm" (ngSubmit)="editCourt()">
         <div class="form-group">
             <label for="name">Court Name</label>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="form-group">
-            <label for="symbol">Symbol</label>
+            <label for="symbol">Sport</label>
             <input type="text" id="symbol" name="symbol" [(ngModel)]="court.symbol" #inputSymbol="ngModel"
                 placeholder="Enter court symbol" required minlength="2" />
             @if (inputSymbol?.touched) {
@@ -82,8 +82,8 @@
         </div>
 
         <div class="button-group">
-            <button class="px-6 py-3 border-2 border-black text-black font-medium rounded-full hover:bg-black hover:text-white transition duration-300" [disabled]="editForm.invalid">Save Changes</button>
-            <button type="button"  style="background-color: #339999;" class="px-6 py-3 text-white font-medium rounded-full shadow-md hover:shadow-lg hover:opacity-90 transition duration-300" (click)="onCancel($event)">Cancel</button>
+            <button class="border-2 border-black text-black font-medium rounded-[20px] hover:bg-black hover:text-white transition duration-300" [disabled]="editForm.invalid">Save</button>
+            <button type="button" style="background-color: #339999;" class="text-white font-medium rounded-[20px] shadow-md hover:bg-black transition-colors duration-300" (click)="onCancel($event)">Cancel</button>
         </div>
     </form>
     }
