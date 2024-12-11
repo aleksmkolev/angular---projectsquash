@@ -43,6 +43,7 @@ Create a `.env` file in the root directory of backend folder and add the followi
 
 🎾
 
-![image](https://github.com/user-attachments/assets/322bcaa9-8afd-445c-9429-3e1136fa0af2)
+![image](https://github.com/user-attachments/assets/7faa0c88-2030-4a94-bd69-0545489de150)
+
 
 
